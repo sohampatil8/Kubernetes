@@ -13,3 +13,4 @@ spec:
     metadata: 
       name: my-pod
       labels:
+        name: 
