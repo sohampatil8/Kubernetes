@@ -1,0 +1,16 @@
+# Namespace definition
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace
+
+# Pod definition
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  namespace: my-namespace
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
