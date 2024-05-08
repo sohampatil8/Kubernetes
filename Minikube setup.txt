@@ -1,0 +1,21 @@
+# yum-config-manager --add-repo https:/download.docker.com/linux/centos/docker-ceorepo
+    #  yum install docker -y
+    #  systemctl start docker
+    #  systemctl enable docker
+    #  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   #  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+   #  /usr/local/bin/minikube start
+   #  /usr/local/bin/minikube start --force
+			
+			###################### 			
+  
+Kubectl SETUP
+1.   #  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+2.   #  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+3.   #chmod +x kubectl
+      mkdir -p ~/.local/bin
+      mv ./kubectl ~/.local/bin/kubectl
+      # and then append (or prepend) ~/.local/bin to $PATH
+
+4.   # kubectl cluster-info
