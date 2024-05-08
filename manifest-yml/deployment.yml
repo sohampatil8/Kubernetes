@@ -9,4 +9,4 @@ spec:
       name: my-pod
       labels:
         name: pod
-        
+        ENV: test
