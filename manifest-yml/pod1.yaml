@@ -6,6 +6,3 @@ spec:
   containers:
     -name: container1
      image: nginx
-     ports:
-      -port: 80
-       protocol: TCP
