@@ -7,7 +7,7 @@ spec:
   selector:
     matchExpression:
       labels:
-        
+      - key
   template:
     metadata: 
       name: my-pod
