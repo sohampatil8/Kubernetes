@@ -8,7 +8,7 @@ spec:
     matchExpression:
       labels:
       - key: name
-      
+        operator: 
   template:
     metadata: 
       name: my-pod
