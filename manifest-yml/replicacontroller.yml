@@ -16,4 +16,5 @@ spec:
         name: pod1
     spec:
       containers:
-      - name: 
+      - name: c00
+        image
