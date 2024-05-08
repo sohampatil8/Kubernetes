@@ -9,11 +9,15 @@ spec:
     - key: name 
       operator: In 
       values: [pod]
+    - key: job
+      operator: In
+      values: [test]
   template:
     metadata: 
       name: my-pod
       labels:
         name: pod
+        job: test
     spec:
       containers:
       - name: c00
