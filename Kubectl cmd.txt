@@ -5,6 +5,7 @@ Run Manifest-File
 #kubectl apply -f <yml_file>
 
 
+
 SHOW LABELS OF POD
 #kubectl get pod <pod_name> --show-labels
 
