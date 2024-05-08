@@ -13,4 +13,4 @@ EXPOSE objects OR resources with clusterIP (Internal communication)
 EXPOSE objects OR resources with NodePort (Public Access with public IP)
 #kubectl expose <object> <object name> --port=80 --type=NodePort
 
-EXPOSE objects OR resources with NodePort
+EXPOSE objects OR resources with LoadBalancer ()
