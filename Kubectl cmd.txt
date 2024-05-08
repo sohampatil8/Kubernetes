@@ -8,4 +8,4 @@ DELETE POD VIA LABEL
 #kubectl delete pods --selector=ENV=science
 
 EXPOSE objects OR resources with clusterIP (Internal communication)
-#kubectl expose <object> <object name> --port=80 --type=Cluse
+#kubectl expose <object> <object name> --port=80 --type=clusterIP
