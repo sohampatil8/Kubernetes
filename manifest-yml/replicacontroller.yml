@@ -8,4 +8,5 @@ metadata:
 
 
 spec:
-  repica
+  replicas:2
+  
