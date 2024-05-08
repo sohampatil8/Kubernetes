@@ -1,7 +1,8 @@
 Run POD
 #kubectl run <pod_name> --image=nginx
-
+DELETE POD
 #kubectl delete pod <pod_name>
+
 Run Manifest-File
 #kubectl apply -f <yml_file>
 
