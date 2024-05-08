@@ -18,3 +18,4 @@ spec:
       - name: c00
         image: nginx
         ports:
+          containerPort
