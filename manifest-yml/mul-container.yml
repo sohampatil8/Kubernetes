@@ -10,6 +10,6 @@ spec:
     - containerPort: 80
   containers:
   - name: container
-    image: httpd
+    image: apache2
     ports:
     - containerPort: 81
