@@ -4,4 +4,5 @@ metadata:
   name: b30
 
 ---
-apiVersion
+apiVersion: v1
+kind: pod
