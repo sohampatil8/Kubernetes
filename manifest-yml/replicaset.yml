@@ -14,7 +14,7 @@ spec:
     metadata: 
       name: my-pod
       labels:
-        name: pod1
+        name: pod
     spec:
       containers:
       - name: c00
