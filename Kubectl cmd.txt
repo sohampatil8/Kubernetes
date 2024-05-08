@@ -14,4 +14,4 @@ EXPOSE objects OR resources with NodePort (Public Access with public IP)
 #kubectl expose <object> <object name> --port=80 --type=NodePort
 
 EXPOSE objects OR resources with LoadBalancer (Manage Load/traffic)
-kubectl expose deployment object --port=80 --type=LoadBalancer --target-port=80
+kubectl expose deployment <object_name> --port=80 --type=LoadBalancer --target-port=80
