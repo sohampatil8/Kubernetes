@@ -1,7 +1,5 @@
 Run pod
-#kubectl run <pod_name> --image=
-
-
+#kubectl run <pod_name> --image=nginx
 
 
 SHOW LABELS OF POD
