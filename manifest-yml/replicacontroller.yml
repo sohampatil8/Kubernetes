@@ -10,4 +10,5 @@ metadata:
 spec:
   replicas: 2
   template:
-    kind
+    metadata: 
+      
