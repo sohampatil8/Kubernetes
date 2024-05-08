@@ -14,4 +14,3 @@ spec:
       name: my-pod
       labels:
         name: pod1
-        
