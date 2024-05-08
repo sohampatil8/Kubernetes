@@ -2,7 +2,7 @@ apiVersion:
 kind:
 
 metadata:
-
+  
 spec:
   replicas: 2
   template:
