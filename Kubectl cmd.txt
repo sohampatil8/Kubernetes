@@ -1,3 +1,8 @@
+
+
+
+
+
 SHOW LABELS OF POD
 #kubectl get pod <pod_name> --show-labels
 
