@@ -7,3 +7,4 @@ CREATE LABEL WITH RUNNING POD
 DELETE POD VIA LABEL
 #kubectl delete pods --selector=ENV=science
 
+EXPOSE 
