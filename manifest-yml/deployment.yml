@@ -12,4 +12,6 @@ spec:
         ENV: test
     spec: 
       containers:
+      - name: c00
+        image: nginx
         
