@@ -6,8 +6,8 @@ spec:
   replicas: 2
   selector:
     matchExpression:
-      - key: name
-        operator: In
+    - key: name
+       operator: In
         value: pod
   template:
     metadata: 
