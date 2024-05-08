@@ -11,5 +11,5 @@ metadata:
   namespace: b30
 spec:
   containers:
-    -name: container
-    
+  - name: container
+
