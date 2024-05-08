@@ -3,5 +3,6 @@ kind: Deployment
 metadata:
   name: my-deployment
 spec:
-  replicas= 2
-  
+  replicas: 2
+  template:
+    
