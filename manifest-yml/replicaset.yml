@@ -9,7 +9,7 @@ spec:
       labels:
       - key: name
         operator: In
-        value
+        value: pod
   template:
     metadata: 
       name: my-pod
