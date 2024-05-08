@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchExpression:
-      
+      labels
   template:
     metadata: 
       name: my-pod
