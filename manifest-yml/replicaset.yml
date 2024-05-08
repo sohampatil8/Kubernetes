@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 2
   selector:
-    
+    matchExp[ression
     name: pod1
   template:
     metadata: 
