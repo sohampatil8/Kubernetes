@@ -6,4 +6,4 @@ spec:
   replicas: 2
   template:
     metadata:
-    -
+      name: my-pod
