@@ -4,5 +4,4 @@ metadata:
   name: my-deployment
 spec:
   replicas= 2
-  selectors:
-    
+  
