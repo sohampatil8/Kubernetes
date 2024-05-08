@@ -7,4 +7,6 @@ metadata:
 apiVersion: v1
 kind: Pod
 metadata:
+  name: my-pod
+  namespace: b30
   
