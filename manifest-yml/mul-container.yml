@@ -6,6 +6,7 @@ spec:
   containers:
   - name: container
     image: nginx
+    ports:
   containers:
   - name: container
-    image: 
+    image: nginx
