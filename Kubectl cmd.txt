@@ -1,4 +1,4 @@
-Run pod
+Run 
 #kubectl run <pod_name> --image=nginx
 
 
