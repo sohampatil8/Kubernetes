@@ -9,4 +9,5 @@ kind: Pod
 metadata:
   name: my-pod
   namespace: b30
-  
+spec:
+  containers:
