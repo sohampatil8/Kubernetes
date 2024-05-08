@@ -7,3 +7,6 @@ spec:
   template:
     metadata:
       name: my-pod
+      labels:
+        name: pod
+        
