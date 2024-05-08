@@ -11,3 +11,5 @@ spec:
   containers:
   - name: container
     image: nginx
+    ports:
+    - containerPort: 81
