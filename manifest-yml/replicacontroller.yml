@@ -1,5 +1,5 @@
 apiVersion:
-kind:
+kind: 
 metadata:
   name: my-replica
 spec:
