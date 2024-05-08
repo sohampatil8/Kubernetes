@@ -7,8 +7,8 @@ spec:
   selector:
     matchExpression:
     - key: name
-       operator: In
-        value: pod
+      operator: In
+      value: pod
   template:
     metadata: 
       name: my-pod
