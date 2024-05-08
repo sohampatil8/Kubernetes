@@ -1,5 +1,5 @@
 Run pod
-#kubectl run pod_name>
+#kubectl run <pod_name> --image=
 
 
 
