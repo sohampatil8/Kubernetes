@@ -7,4 +7,5 @@ CREATE LABEL WITH RUNNING POD
 DELETE POD VIA LABEL
 #kubectl delete pods --selector=ENV=science
 
-EXPOSE objects OR resources with clusterIP (Internal com)
+EXPOSE objects OR resources with clusterIP (Internal communication)
+#
