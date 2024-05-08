@@ -1,7 +1,8 @@
 Run POD
 #kubectl run <pod_name> --image=nginx
 
-Run manifest-File
+Run Manifest-File
+
 
 
 SHOW LABELS OF POD
