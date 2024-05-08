@@ -13,3 +13,8 @@ spec:
     image: apache2
     ports:
     - containerPort: 81
+    containers:
+  - name: container
+    image: nginx
+    ports:
+    - containerPort: 80
