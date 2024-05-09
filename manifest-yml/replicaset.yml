@@ -10,7 +10,7 @@ spec:
       operator: In 
       values: [pod , test]
     - key: name 
-      operator: In 
+      operator: NotIn 
       values: [pod , test]
   template:
     metadata: 
