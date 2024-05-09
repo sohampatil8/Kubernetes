@@ -13,5 +13,5 @@ spec:
         name: pod1
     spec:
       containers:
-      - name: c00
+      - name: container1
         image: nginx
