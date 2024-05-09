@@ -14,7 +14,6 @@ spec:
       name: my-pod
       labels:
         name: pod
-        job: test
     spec:
       containers:
       - name: c00
