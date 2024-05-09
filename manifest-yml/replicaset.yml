@@ -8,7 +8,7 @@ spec:
     matchExpressions:
     - key: name 
       operator: In 
-      values: [pod , test]
+      values: ["pod" , "test"]
     - key: name 
       operator: NotIn 
       values: [dev , ops]
