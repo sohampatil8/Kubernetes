@@ -9,6 +9,9 @@ spec:
     - key: name 
       operator: In 
       values: [pod , test]
+    - key: name 
+      operator: In 
+      values: [pod , test]
   template:
     metadata: 
       name: my-pod
