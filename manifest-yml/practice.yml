@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: b30
+  name: 
 
 ---
 apiVersion: v1
