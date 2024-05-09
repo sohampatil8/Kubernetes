@@ -9,7 +9,7 @@ spec:
     - key: name 
       operator: In 
       values: ["pod" , "test"]
-    - key: name 
+    - key: job 
       operator: NotIn 
       values: [dev , ops]
   template:
