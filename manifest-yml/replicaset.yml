@@ -11,7 +11,7 @@ spec:
       values: ["pod" , "soham"]
     - key: job 
       operator: NotIn 
-      values: [dev , ops]
+      values: ["dev , ops]
   template:
     metadata: 
       name: my-pod
