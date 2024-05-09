@@ -11,7 +11,7 @@ spec:
       values: [pod , test]
     - key: name 
       operator: NotIn 
-      values: [pod , test]
+      values: [pod , ]
   template:
     metadata: 
       name: my-pod
