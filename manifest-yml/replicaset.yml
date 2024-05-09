@@ -8,10 +8,7 @@ spec:
     matchExpressions:
     - key: name 
       operator: In 
-      values: [pod]
-    - key: job
-      operator: In
-      values: [test]
+      values: [pod , test]
   template:
     metadata: 
       name: my-pod
