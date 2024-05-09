@@ -24,4 +24,4 @@ spec:
         ports:
         - containerPort: 80
           name: nginx
-          
+          protocol: TCP
