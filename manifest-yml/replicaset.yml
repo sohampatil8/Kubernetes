@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replica
+spec:
+  replicas: 2
+  selector:
+    matchExpressions:
+    - key: name 
+      operator: In 
+      values: ["pod" , "soham"]
+    - key: job 
+      operator: NotIn 
+      values: ["dev" , "ops"]
+  template:
+    metadata: 
+      name: my-pod
+      labels:
+        name: pod
+    spec:
+      containers:
+      - name: container1
+        image: nginx
+        ports:
+        - containerPort: 80
+          name: nginx
+          protocol: TCP

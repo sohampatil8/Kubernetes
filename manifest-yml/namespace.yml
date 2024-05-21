@@ -1,0 +1,17 @@
+# Namespace definition
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: b28
+
+---  
+# Pod definition
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  namespace: b28
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
