@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: sahilsapate08/database-studentwar
+        image: sohampatil08/studentwar-database
         ports:
         - containerPort: 3306
         env:
@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: sahilsapate08/tomcat-studentwar
+        image: sohampatil08/studentwar-tomcat
         ports:
         - containerPort: 8080
         env:
