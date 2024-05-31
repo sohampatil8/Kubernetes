@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment  
+metadata:
+  name: database-app
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database-app
+  strategy: 
+    type: RollingUpdate 
+  template: 
+    metadata: 
+      labels:
+        app: database-app 
+    spec:
+      containers:
+      - name: database-app 
+        image: sohampatil08/k8s-studentwar-database
+        ports:
+        - name: mysql
+          containerPort: 3306
+          protocol: TCP
