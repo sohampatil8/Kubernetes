@@ -1,12 +1,19 @@
+Configure EKS-cluster on powershell or Ec2-Instance
+#aws eks update-kubeconfig --region ap-south-1 --name my-cluster
+
 Run POD
-#kubectl run <pod_name> --image=nginx
+kubectl run <pod-name> --image=<image-name>
+kubectl run my-pod --image=nginx --port=80 --env="ENV_VAR_NAME=value"
+
 DELETE POD
 #kubectl delete pod <pod_name>
 
 Run Manifest-File
 #kubectl apply -f <yml_file>
 
-
+Execute commands in a pod:
+kubectl exec -it <pod_name> -- /bin/bash  # Access a shell in a running pod
+kubectl exec <pod_name> -- <command>      # Execute a command in a specific pod
 
 SHOW LABELS OF POD
 #kubectl get pod <pod_name> --show-labels
@@ -17,7 +24,9 @@ CREATE LABEL WITH RUNNING POD
 DELETE POD VIA LABEL
 #kubectl delete pods --selector=ENV=science
 
-
+Port forwarding:
+kubectl port-forward <pod_name> <local_port>:<pod_port>
+kubectl port-forward  svc/<service_name> <local_port>:<pod_port> --address 0.0.0.0 &    # Minikube Expose to EC2
 
 EXPOSE objects OR resources with clusterIP (Internal communication)
 #kubectl expose <object> <object name> --port=80 --type=clusterIP
@@ -27,3 +36,33 @@ EXPOSE objects OR resources with NodePort (Public Access with public IP)
 
 EXPOSE objects OR resources with LoadBalancer (Manage Load/traffic)
 kubectl expose <object> <object_name> --port=80 --type=LoadBalancer --target-port=80
+
+Scale a deployment:
+kubectl scale deployment <deployment_name> --replicas=<number>
+
+Rollout updates:
+kubectl rollout status deployment/<deployment_name>       # Check the status of a rollout
+kubectl rollout history deployment/<deployment_name>      # View rollout history
+kubectl rollout undo deployment/<deployment_name>         # Roll back to the previous version
+
+View logs:
+kubectl logs <pod_name>                       # View logs for a specific pod
+kubectl logs <pod_name> -c <container_name>   # View logs for a specific container in a pod
+kubectl logs -f <pod_name>                    # Follow logs for a pod
+
+Namespaces:
+Create a namespace:
+kubectl create namespace <namespace_name>
+kubectl config set-context --current --namespace=<namespace_name>   # Switch between namespaces
+
+Config Maps and Secrets:
+kubectl create configmap <config_name> --from-literal=<key>=<value>         # Create config_Map
+kubectl create secret generic <secret_name> --from-literal=<key>=<value>    # Create Secrets
+View ConfigMap or Secret:
+kubectl get configmap <config_name> -o yaml
+kubectl get secret <secret_name> -o yaml
+
+View pod events:    # Troubleshooting
+kubectl get events --sort-by='.metadata.creationTimestamp'
+kubectl top node
+kubectl top pod
