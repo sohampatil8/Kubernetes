@@ -1,4 +1,8 @@
+#EKS Cluster Role:
 AmazonEKSClusterPolicy
+AmazonEKSServicePolicy
+
+#Node Instance Role:
 AmazonEKSWorkerNodePolicy
 AmazonEKS_CNI_Policy
 AmazonEC2ContainerRegistryReadOnly
